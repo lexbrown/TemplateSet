@@ -9,3 +9,6 @@ df.describe()
 df.info()
 df['foobar'].unique()
 df['foobar'].value_counts()
+
+
+df = pd.read_csv ("gdp_per_capita.csv ", thousands= ',', delimiter= '\t', encoding= 'latinl' , na_values= "n/a")
