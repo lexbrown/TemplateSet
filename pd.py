@@ -12,3 +12,6 @@ df['foobar'].value_counts()
 
 
 df = pd.read_csv("gdp_per_capita.csv ", thousands= ',', delimiter= '\t', encoding= 'latinl' , na_values= "n/a")
+
+#прочитать csv без столбцов, задать имена столбцов, задать тип данных
+rawdata = pd.read_csv('msk_raw_coords.csv', sep='\t', na_values= "n/a", names=['lat','lon'], dtype = {'lat':str,'lon':str})
