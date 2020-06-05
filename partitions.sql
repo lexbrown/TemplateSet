@@ -16,6 +16,8 @@
     
     FROM 
     
+-- Взятие персентиля, в том числе и медианы
+select percentile_approx(income, 0.5)
     
 -- Работа со временем
 select from_unixtime(unix_timestamp('2015-12-12 16:15:17')+3600);
